@@ -34,12 +34,7 @@ public class SearchActivity extends AppCompatActivity {
         btnSearch=findViewById(R.id.btnSearch);
         tvData=findViewById(R.id.tvData);
 
-        btnSearch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                loadData();
-            }
-        });
+        btnSearch.setOnClickListener(i -> loadData());
 
     }
     private void loadData(){

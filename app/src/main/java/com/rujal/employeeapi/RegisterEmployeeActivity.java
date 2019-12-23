@@ -31,12 +31,7 @@ public class RegisterEmployeeActivity extends AppCompatActivity {
         etAge=findViewById(R.id.etAge);
         btnRegister=findViewById(R.id.btnRegister);
 
-        btnRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                register();
-            }
-        });
+        btnRegister.setOnClickListener(i -> register());
 
     }
 

@@ -42,25 +42,10 @@ public class UpdateDeleteActivity extends AppCompatActivity {
         btnDelete = findViewById(R.id.btnDelete);
 
 
-        btnSearch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                loadData();
-            }
-        });
+        btnSearch.setOnClickListener(i -> loadData());
 
-        btnUpdate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                updateEmployee();
-            }
-        });
-        btnDelete.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                deleteEmployee();
-            }
-        });
+        btnUpdate.setOnClickListener(i -> updateEmployee());
+        btnDelete.setOnClickListener(i -> deleteEmployee());
 
     }
 
